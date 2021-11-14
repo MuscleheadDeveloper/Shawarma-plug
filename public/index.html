@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShawarmaPlug</title>
+    <link
+      rel="shortcut icon"
+      href="images/android-chrome-192x192.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="text-gray-600">
+    <!-- CONTENT WRAPPER -->
+    <div class="grid lg:grid-cols-3">
+      <div class="lg:col-span-1 lg:flex lg:justify-end">
+        <nav class="text-right">
+          <div class="flex items-center px-1 justify-between">
+            <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+              <a href="/" class="hover:text-gray-800">Shawarma Spot</a>
+            </h1>
+            <div class="px-4 cursor-pointer lg:hidden">
+              <i class="fas fa-bars" id="burger"></i>
+            </div>
+          </div>
+          <ul class="text-sm mt-6 hidden lg:block" id="menu">
+            <li class="text-gray-700 font-bold">
+              <a href="#" class="border-r-4 border-red-400">
+                <span> Home</span>
+                <i class="fas fa-home py-2 mr-2"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="border-r-4 border-white">
+                <span>About</span>
+                <i class="fas fa-question-circle py-2 mr-2"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="border-r-4 border-white">
+                <span>Contact</span>
+                <i class="fas fa-envelope mr-2 py-2"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <main class="px-16 py-6 bg-gray-100 lg:col-span-2">
+        <div class="flex justify-center md:justify-end">
+          <a
+            href="#"
+            class="
+              hover:text-white
+              transition
+              ease-out
+              duration-500
+              hover:bg-red-400
+              buttons
+              md:border-2
+              border-red-400
+              text-red-400
+            "
+            >Log In</a
+          >
+          <a
+            href="#"
+            class="
+              hover:text-white
+              transition
+              ease-out
+              duration-500
+              hover:bg-red-400
+              buttons
+              md:border-2
+              border-red-400
+              text-red-400
+              ml-2
+            "
+            >Sign Up</a
+          >
+        </div>
+
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+          <h3 class="text-2xl font-semibold">For Ninjas</h3>
+        </header>
+
+        <div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Latest Recipes
+          </h4>
+
+          <div class="mt-8 flex flex-col gap-8 justify-around lg:flex-row">
+            <!-- cards go here -->
+            <div class="card">
+              <img
+                src="images/shawarma1.jpg"
+                alt=""
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Chicken and Sausage</span>
+                <span class="block text-gray-500 text-sm">Recipe by Gwen</span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="images/shawarma3.jpg"
+                alt=""
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Custom Beauty</span>
+                <span class="block text-gray-500 text-sm"
+                  >Recipe by the Customer</span
+                >
+              </div>
+              <div class="badge">
+                <span>DIY..set awon Creative &#x1F60F;</span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="images/shawarma2.jpg"
+                alt=""
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Beef and Sausage</span>
+                <span class="block text-gray-500 text-sm">Recipe by Gwen</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="mt-12 pb-2 font-bold border-b border-gray-200">
+            Most Popular
+          </h4>
+          <div class="mt-8">
+            <!-- cards go here too -->
+          </div>
+
+          <div class="flex justify-center">
+            <div
+              class="
+                buttons
+                border-2
+                transform
+                hover:scale-125 hover:bg-opacity-50
+                transition
+                ease-out
+                duration-300
+                border-gray-600
+                bg-white
+                hover:bg-gray-600 hover:text-white hover:shadow-inner
+              "
+            >
+              Load more
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
